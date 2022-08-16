@@ -1,5 +1,5 @@
 let firstName: string = 'Renzo'
-let age: number = 247
+let age: number = 41
 let active: boolean = true
 
 // let names: string [] = [1, 2, 3, 4] // gives an error
@@ -59,10 +59,10 @@ complexItem = 22
 // console.log('complexItem ', complexItem)
 
 enum bloodType {
-    aPositive,
-    bPositive,
-    oNegative,
-    oPositive,
+    aPositive =20,
+    bPositive =30,
+    oNegative =40,
+    oPositive =80,
 }
 
 interface human {
@@ -79,3 +79,5 @@ const me: human = {
     height: 5.9,
     bloodType: bloodType.oPositive,
 }
+
+console.log({me})
