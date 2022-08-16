@@ -41,11 +41,41 @@ let mystatus = studentTypes.graduated
 
 // console.log(`my entry code is : ${code}`)
 
-function sum (arr: number[]) {
-    return arr.reduce((total: number, num: number ) => total + num)
-    return arr.reduce( (previousValue: number, currentValue: number)=> {return previousValue + currentValue})
+// function sum (arr: number[]) {
+//     return arr.reduce((total: number, num: number ) => total + num)
+//     return arr.reduce( (previousValue: number, currentValue: number)=> {return previousValue + currentValue})
 
+// }
+// let numbers: number[] = [1,2,3,4,5,6]
+
+// console.log(sum(numbers))
+
+let complexItem: any = { name: 'Renzo' }
+complexItem = { title: 'proffesor'}
+
+complexItem = 'it is a string'
+complexItem = 22
+
+// console.log('complexItem ', complexItem)
+
+enum bloodType {
+    aPositive,
+    bPositive,
+    oNegative,
+    oPositive,
 }
-let numbers: number[] = [1,2,3,4,5,6]
 
-console.log(sum(numbers))
+interface human {
+    name: string,
+    age: number,
+    height: number,
+    bloodType: bloodType,
+}
+
+
+const me: human = {
+    name: 'Bobby',
+    age: 29,
+    height: 5.9,
+    bloodType: bloodType.oPositive,
+}
